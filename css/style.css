@@ -14,7 +14,7 @@
 body {
 	margin: 0px;padding: 0px;
 	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-	font-size: 16px;	/*文字サイズ*/
+	font-size: 14px;	/*文字サイズ*/
 	line-height: 2;		/*行間*/
 	color: #666;		/*文字色  もともと#666;*/
 	background: #fbebda;	/*背景色*/
@@ -34,7 +34,7 @@ a {
 	transition: 0.4s;
 }
 a:hover {
-	color: #A88763;
+	color: #9e5b1c;
 	text-decoration: none;
 }
 
@@ -63,6 +63,8 @@ header #logo img {
 /*メニューブロック全体*/
 #menubar {
 	float: left;
+	list-style-type: none;
+	overflow: hidden;
 }
 /*メニュー１個あたりの指定*/
 #menubar li {
@@ -435,12 +437,12 @@ p.check a {color: #fff;}
 
 /*ul.disc,olタグ
 ---------------------------------------------------------------------------*/
-ul.disc {
-	list-style: disc;
-	padding: 0 20px 20px 45px;
-}
+ul {
+	list-style-type: disc;
+	padding: 0 10px 10px 20px;
+	}
 ol {
-	padding: 0 20px 20px 45px;
+	padding: 0 10px 10px 20px;
 }
 
 /*その他
@@ -473,6 +475,12 @@ ol {
 /*メインメニュー
 ---------------------------------------------------------------------------*/
 /*スマホ用メニューブロック全体*/
+		
+#menubar-s {
+	list-style-type: none;
+	overflow: hidden;
+}
+
 #menubar-s {
 	display: block;overflow: auto;height: 100%;
 	text-align: left;
@@ -487,7 +495,7 @@ ol {
 	font-size: 16px;	/*文字サイズ*/
 }
 /*メニュー１個あたりの設定と、子メニューの見出し。*/
-#menubar-s ul li a,#menubar_hdr2 {
+#menubar-s li a,#menubar_hdr2 {
 	display: block;text-decoration: none;
 	padding: 10px 15px;	/*上下、左右へのメニュー内の余白*/
 	border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
@@ -503,6 +511,12 @@ ol {
 	padding-left: 35px;
 }
 /*子メニューメニューブロック全体*/
+		
+#menubar-s2 {
+	list-style-type: none;
+	overflow: hidden;
+}
+
 #menubar-s2 {
 	display: block;
 	margin-top: 10px;
