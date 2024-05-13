@@ -308,7 +308,7 @@ footer .pr {display: block;}
 #copyright {
 	clear: both;
 	text-align: center;
-	background: rgba(0,0,0,0.6);	/*背景色*/
+	background: #fbebda;	/*背景色*/
 }
 #copyright a {text-decoration: none;}
 #copyright a:hover {color: #333;}
@@ -440,7 +440,7 @@ p.check a {color: #fff;}
 ul {
 	list-style-type: disc;
 	padding: 0 10px 10px 20px;
-	}
+}
 ol {
 	padding: 0 10px 10px 20px;
 }
@@ -470,29 +470,30 @@ ol {
 
 /*画面幅650px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:650px){
+@media screen and (max-width:600px){
 
 /*メインメニュー
 ---------------------------------------------------------------------------*/
 /*スマホ用メニューブロック全体*/
 		
-#menubar-s {
+/*#menubar-s {
 	list-style-type: none;
-	overflow: hidden;
-}
+	/*overflow: hidden;*/
+/*}*/
 
 #menubar-s {
 	display: block;overflow: auto;height: 100%;
 	text-align: left;
 	position: fixed;z-index: 100;
 	top: 0px;
-	width: 100%;
+	width: 25%;
 	background: #754418;	/*背景色*/
 	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
 	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
 	animation-duration: 0.5s;	/*アニメーションの実行時間。0.5秒。*/
 	animation-fill-mode: both;	/*待機中は最初のキーフレームを、完了後は最後のキーフレームを維持*/
 	font-size: 16px;	/*文字サイズ*/
+	list-style-type: none;
 }
 /*メニュー１個あたりの設定と、子メニューの見出し。*/
 #menubar-s li a,#menubar_hdr2 {
@@ -512,10 +513,10 @@ ol {
 }
 /*子メニューメニューブロック全体*/
 		
-#menubar-s2 {
+/*#menubar-s2 {
 	list-style-type: none;
-	overflow: hidden;
-}
+	/*overflow: hidden;*/
+/*}*/
 
 #menubar-s2 {
 	display: block;
@@ -523,6 +524,7 @@ ol {
 	background: #754418;	/*背景色*/
 	border: 1px solid #666;		/*上の線の幅、線種、色*/
 	border-bottom: none;		/*下の線のみ消す*/
+	list-style-type: none;
 }
 /*「＞」アイコン設定*/
 #menubar_hdr2.close {
@@ -571,13 +573,12 @@ ul.icon {
 	margin-left: 20px;	/*左側に空けるスペース*/
 }
 
-}
 
  #sidebar {
     width: 30%;
  }
 
-
+	}
 
 /*画面幅600px以下の設定
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -667,34 +668,8 @@ body.s-n #sub,body.s-n #footermenu {display: none;}
  #sidebar {
  	margin-top: 10px;
     width: 100%;
- }
+		}
+		
+	}
+		
 
- /* タブレットサイズ（768px以上）でのスタイル設定 */
- @media screen and (min-width: 651px) and (max-width: 1024px)  {
-    /* 通常のメニューバーを非表示 */
-    #menubar {
-        display: none;
-    }
-
-    /* ハンバーガーメニューを表示 */
-    #menubar_hdr {
-        display: block;
-    }
-
-    /* ハンバーガーメニューの内容 */
-    #menubar-s {
-        display: none; /* 初期状態では非表示 */
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        background: #754418;
-        z-index: 100;
-    }
-}
-
-/* ハンバーガーメニューをクリックしたときの動作 */
-#menubar_hdr.open + #menubar-s,
-#menubar_hdr.open + #menubar_hdr2 + #menubar-s {
-    display: block;
-}
