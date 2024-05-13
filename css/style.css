@@ -74,7 +74,7 @@ header #logo img {
 #menubar li a, .ddmenu-title {
 	display: block;text-decoration: none;
 	color: #fff;	/*文字色*/
-	padding: 0px 20px;	/*上下、左右へのメニュー内の余白*/
+	padding: 0px 10px;	/*上下、左右へのメニュー内の余白*/
 	line-height: 50px;	/*行間。headerのheightと数字を合わせる。*/
 }
 /*マウスオン時の背景色*/
