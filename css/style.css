@@ -69,7 +69,7 @@ header #logo img {
 /*メニュー１個あたりの指定*/
 #menubar li {
 	float: left;
-	letter-spacing: 0.1em;
+	letter-spacing: 0em;
 }
 #menubar li a, .ddmenu-title {
 	display: block;text-decoration: none;
